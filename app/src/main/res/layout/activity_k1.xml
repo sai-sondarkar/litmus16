@@ -1,0 +1,221 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            android:id="@+id/linearLayout3">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                app:layout_scrollFlags="scroll|enterAlways"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+
+        </android.support.design.widget.AppBarLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/linearLayout3">
+
+
+
+            <android.support.v4.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                >
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/k1"
+                        android:background="#34465d"
+                        android:scaleType="fitXY"
+                        android:adjustViewBounds="true"
+                        android:layout_gravity="center_horizontal" />
+
+
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20dp"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="16dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textSize="25sp"
+                                android:gravity="left"
+                                android:fontFamily="sans-serif-light"
+                                android:textStyle="bold"
+                                android:textColor="#34465d"
+                                android:text="Description"/>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="#34465d"
+                                />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_marginTop="5dp"
+                                android:fontFamily="sans-serif-thin"
+                                android:textSize="17dp"
+                                android:textColor="#212121"
+                                android:layout_height="wrap_content"
+                                android:text="@string/k1desp"
+                                />
+
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                    <!--<android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20dp"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="16dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textSize="25sp"
+                                android:gravity="left"
+                                android:textColor="#34465d"
+                                android:fontFamily="sans-serif-light"
+                                android:textStyle="bold"
+                                android:text="Entry Fees"/>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="#34465d"
+                                />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_margin="5dp"
+                                android:layout_height="wrap_content"
+                                android:textSize="17dp"
+                                android:textColor="#212121"
+                                android:fontFamily="sans-serif-thin"
+                                android:text="Rs.200/-  per Team "
+                                />
+
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+-->
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20dp"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="16dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textSize="25sp"
+                                android:gravity="left"
+                                android:textColor="#34465d"
+                                android:fontFamily="sans-serif-light"
+                                android:textStyle="bold"
+                                android:text="Schedule"/>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="#34465d"
+                                />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_margin="5dp"
+                                android:layout_height="wrap_content"
+                                android:textSize="17dp"
+                                android:textColor="#212121"
+                                android:fontFamily="sans-serif-thin"
+                                android:text="@string/dates_kalakriti"
+                                />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_margin="5dp"
+                                android:layout_height="wrap_content"
+                                android:textSize="17dp"
+                                android:textColor="#212121"
+                                android:fontFamily="sans-serif-thin"
+                                android:text="Time : - "
+                                />
+
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                </LinearLayout>
+
+            </android.support.v4.widget.NestedScrollView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:onClick="loc"
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@drawable/ic_location" />
+
+
+</android.support.design.widget.CoordinatorLayout>

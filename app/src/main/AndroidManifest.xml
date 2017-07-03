@@ -1,0 +1,494 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="itmvu.litmus17" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <!--
+      IMPORTANT: Change "com.parse.starter.permission.C2D_MESSAGE" in the lines below
+      to match your app's package name + ".permission.C2D_MESSAGE".
+    -->
+
+    <application
+        android:name="itmvu.litmus17.PushNotify"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/MyMaterialTheme" >
+        <activity
+            android:name="itmvu.litmus17.splash"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+        <activity
+            android:name="itmvu.litmus17.first"
+            android:label="@string/title_activity_first"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="itmvu.litmus17.Comingsoon"
+            android:label="@string/title_activity_comingsoon"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="itmvu.litmus17.mainpage"
+            android:label="@string/title_activity_mainpage"
+            android:parentActivityName="itmvu.litmus17.splash"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="itmvu.litmus17.splash" />
+        </activity>
+        <activity
+            android:name="itmvu.litmus17.events"
+            android:label="@string/title_activity_events"
+            android:parentActivityName="itmvu.litmus17.mainpage"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="itmvu.litmus17.mainpage" />
+        </activity>
+        <activity
+            android:name="itmvu.litmus17.Register"
+            android:label="@string/title_activity_register"
+            android:parentActivityName="itmvu.litmus17.mainpage"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="itmvu.litmus17.mainpage" />
+        </activity>
+        <activity
+            android:name="itmvu.litmus17.t1"
+            android:label="@string/title_activity_t1"
+            android:parentActivityName="itmvu.litmus17.events"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="itmvu.litmus17.events" />
+        </activity>
+        <activity
+            android:name="itmvu.litmus17.t2"
+            android:label="@string/title_activity_t2"
+            android:parentActivityName="itmvu.litmus17.events"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="itmvu.litmus17.events" />
+        </activity>
+        <activity
+            android:name="itmvu.litmus17.t3"
+            android:label="@string/title_activity_t3"
+            android:parentActivityName="itmvu.litmus17.events"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="itmvu.litmus17.events" />
+        </activity>
+        <activity
+            android:name="itmvu.litmus17.t4"
+            android:label="@string/title_activity_t4"
+            android:parentActivityName="itmvu.litmus17.events"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="itmvu.litmus17.events" />
+        </activity>
+        <activity
+            android:name="itmvu.litmus17.t5"
+            android:label="@string/title_activity_t5"
+            android:parentActivityName="itmvu.litmus17.events"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="itmvu.litmus17.events" />
+        </activity>
+        <activity
+            android:name="itmvu.litmus17.t6"
+            android:label="@string/title_activity_t6"
+            android:parentActivityName="itmvu.litmus17.events"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="itmvu.litmus17.events" />
+        </activity>
+        <activity
+            android:name="itmvu.litmus17.t7"
+            android:label="@string/title_activity_t7"
+            android:parentActivityName="itmvu.litmus17.events"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="itmvu.litmus17.events" />
+        </activity>
+        <activity
+            android:name="itmvu.litmus17.t8"
+            android:label="@string/title_activity_t8"
+            android:parentActivityName="itmvu.litmus17.events"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="itmvu.litmus17.events" />
+        </activity>
+        <activity
+            android:name="itmvu.litmus17.t9"
+            android:label="@string/title_activity_t9"
+            android:parentActivityName="itmvu.litmus17.events"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="itmvu.litmus17.events" />
+        </activity>
+        <activity
+            android:name="itmvu.litmus17.t10"
+            android:label="@string/title_activity_t10"
+            android:parentActivityName="itmvu.litmus17.events"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="itmvu.litmus17.events" />
+        </activity>
+        <activity
+            android:name="itmvu.litmus17.t11"
+            android:label="@string/title_activity_t11"
+            android:parentActivityName="itmvu.litmus17.events"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="itmvu.litmus17.events" />
+        </activity>
+        <activity
+            android:name="itmvu.litmus17.t12"
+            android:label="@string/title_activity_t12"
+            android:parentActivityName="itmvu.litmus17.events"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="itmvu.litmus17.events" />
+        </activity>
+        <activity
+            android:name="itmvu.litmus17.t13"
+            android:label="@string/title_activity_t13"
+            android:parentActivityName="itmvu.litmus17.events"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="itmvu.litmus17.events" />
+        </activity>
+        <activity
+            android:name="itmvu.litmus17.GirlsGullyCricket_magnif"
+            android:label="@string/title_activity_c1"
+            android:parentActivityName="itmvu.litmus17.events"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="itmvu.litmus17.events" />
+        </activity>
+        <activity
+            android:name="itmvu.litmus17.c2"
+            android:label="@string/title_activity_c2"
+            android:parentActivityName="itmvu.litmus17.events"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="itmvu.litmus17.events" />
+        </activity>
+        <activity
+            android:name="itmvu.litmus17.c3"
+            android:label="@string/title_activity_c3"
+            android:parentActivityName="itmvu.litmus17.events"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="itmvu.litmus17.events" />
+        </activity>
+        <activity
+            android:name="itmvu.litmus17.c4"
+            android:label="@string/title_activity_c4"
+            android:parentActivityName="itmvu.litmus17.events"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="itmvu.litmus17.events" />
+        </activity>
+        <activity
+            android:name="itmvu.litmus17.c5"
+            android:label="@string/title_activity_c5"
+            android:parentActivityName="itmvu.litmus17.events"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="itmvu.litmus17.events" />
+        </activity>
+        <activity
+            android:name="itmvu.litmus17.c6"
+            android:label="@string/title_activity_c6"
+            android:parentActivityName="itmvu.litmus17.events"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="itmvu.litmus17.events" />
+        </activity>
+        <activity
+            android:name="itmvu.litmus17.c7"
+            android:label="@string/title_activity_c7"
+            android:parentActivityName="itmvu.litmus17.events"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="itmvu.litmus17.events" />
+        </activity>
+        <activity
+            android:name="itmvu.litmus17.c8"
+            android:label="@string/title_activity_c8"
+            android:parentActivityName="itmvu.litmus17.events"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="itmvu.litmus17.events" />
+        </activity>
+        <activity
+            android:name="itmvu.litmus17.abtus"
+            android:label="@string/title_activity_abtus"
+            android:parentActivityName="itmvu.litmus17.mainpage"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="itmvu.litmus17.mainpage" />
+        </activity>
+        <activity
+            android:name="itmvu.litmus17.contactus"
+            android:label="@string/title_activity_contactus"
+            android:parentActivityName="itmvu.litmus17.mainpage"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="itmvu.litmus17.mainpage" />
+        </activity>
+        <activity
+            android:name="itmvu.litmus17.c9"
+            android:label="@string/title_activity_c9"
+            android:parentActivityName="itmvu.litmus17.events"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="itmvu.litmus17.events" />
+        </activity>
+        <activity
+            android:name="itmvu.litmus17.Sp"
+            android:label="@string/title_activity_sp"
+            android:parentActivityName="itmvu.litmus17.mainpage"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="itmvu.litmus17.mainpage" />
+        </activity>
+        <activity
+            android:name="itmvu.litmus17.m1"
+            android:label="@string/title_activity_m1"
+            android:parentActivityName="itmvu.litmus17.events"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="itmvu.litmus17.events" />
+        </activity>
+        <activity
+            android:name="itmvu.litmus17.m2"
+            android:label="@string/title_activity_m2"
+            android:parentActivityName="itmvu.litmus17.events"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="itmvu.litmus17.events" />
+        </activity>
+        <activity
+            android:name="itmvu.litmus17.m3"
+            android:label="@string/title_activity_m3"
+            android:parentActivityName="itmvu.litmus17.events"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="itmvu.litmus17.events" />
+        </activity>
+        <activity
+            android:name="itmvu.litmus17.m4"
+            android:label="@string/title_activity_m4"
+            android:parentActivityName="itmvu.litmus17.events"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="itmvu.litmus17.events" />
+        </activity>
+        <activity
+            android:name="itmvu.litmus17.m5"
+            android:label="@string/title_activity_m5"
+            android:parentActivityName="itmvu.litmus17.events"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="itmvu.litmus17.events" />
+        </activity>
+        <activity
+            android:name="itmvu.litmus17.m6"
+            android:label="@string/title_activity_m6"
+            android:parentActivityName="itmvu.litmus17.events"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="itmvu.litmus17.events" />
+        </activity>
+        <activity
+            android:name="itmvu.litmus17.m7"
+            android:label="@string/title_activity_m7"
+            android:parentActivityName="itmvu.litmus17.events"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="itmvu.litmus17.events" />
+        </activity>
+        <activity
+            android:name="itmvu.litmus17.k1"
+            android:label="@string/title_activity_k1"
+            android:parentActivityName="itmvu.litmus17.events"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="itmvu.litmus17.events" />
+        </activity>
+        <activity
+            android:name="itmvu.litmus17.k2"
+            android:label="@string/title_activity_k2"
+            android:parentActivityName="itmvu.litmus17.events"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="itmvu.litmus17.events" />
+        </activity>
+        <activity
+            android:name="itmvu.litmus17.k3"
+            android:label="@string/title_activity_k3"
+            android:parentActivityName="itmvu.litmus17.events"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="itmvu.litmus17.events" />
+        </activity>
+        <activity
+            android:name="itmvu.litmus17.k4"
+            android:label="@string/title_activity_k4"
+            android:parentActivityName="itmvu.litmus17.events"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="itmvu.litmus17.events" />
+        </activity>
+
+        <service android:name="com.parse.PushService" />
+
+        <receiver
+            android:name="itmvu.litmus17.pushrecive"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.parse.push.intent.RECEIVE" />
+                <action android:name="com.parse.push.intent.DELETE" />
+                <action android:name="com.parse.push.intent.OPEN" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.parse.GcmBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <!-- IMPORTANT: Change "com.parse.starter" to match your app's package name. -->
+                <category android:name="itmvu.litmus16" />
+            </intent-filter>
+        </receiver>
+
+        <!--
+        <receiver android:name="itmvu.litmus16.pushrecive" android:exported="false"  >
+            <intent-filter>
+                <action android:name="com.parse.push.intent.RECEIVE" />
+                <action android:name="com.parse.push.intent.OPEN" />
+                <action android:name="com.parse.push.intent.DELETE" />
+            </intent-filter>
+        </receiver>
+        -->
+        <meta-data
+            android:name="com.parse.push.notification_icon"
+            android:resource="@drawable/ic_notify" />
+
+        <activity
+            android:name="itmvu.litmus17.RegisterTechnovision"
+            android:label="@string/title_activity_registerp"
+            android:parentActivityName="itmvu.litmus17.mainpage"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="itmvu.litmus17.registermenu" />
+        </activity>
+        <activity
+            android:name="itmvu.litmus17.RegisterMagnif"
+            android:label="@string/title_activity_registerm"
+            android:parentActivityName="itmvu.litmus17.mainpage"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="itmvu.litmus17.registermenu" />
+        </activity>
+        <activity
+            android:name="itmvu.litmus17.RegisterSports"
+            android:label="@string/title_activity_registerc"
+            android:parentActivityName="itmvu.litmus17.mainpage"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="itmvu.litmus17.registermenu" />
+        </activity>
+        <activity
+            android:name="itmvu.litmus17.registerk"
+            android:label="@string/title_activity_registerk"
+            android:parentActivityName="itmvu.litmus17.mainpage"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="itmvu.litmus17.mainpage" />
+        </activity>
+        <activity
+            android:name="itmvu.litmus17.registermenu"
+            android:label="@string/title_activity_registermenu"
+            android:parentActivityName="itmvu.litmus17.mainpage"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="itmvu.litmus17.mainpage" />
+        </activity>
+        <activity
+            android:name="itmvu.litmus17.notify"
+            android:label="@string/title_activity_notify"
+            android:parentActivityName="itmvu.litmus17.mainpage" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="itmvu.litmus17.mainpage" />
+        </activity>
+        <activity
+            android:name="itmvu.litmus17.FireBaseExample"
+            android:label="@string/title_activity_fire_base_example" >
+
+        </activity>
+    </application>
+
+</manifest>
